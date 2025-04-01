@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice's Memory Game</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon"/>
+</head>
+<body>
+    <h1>Alice's Memory Game</h1>
+    <div class="timer" id="timer">00:00</div>
+    <div class="buttons">
+        <button onclick="setGridSize(4)" class="cute-button">4x4</button>
+        <button onclick="setGridSize(6)" class="cute-button">6x6</button>
+    </div>
+    <div class="popup" id="startPopup">
+        <img src="img/gif1.gif" alt="Start Gif" class="popup-gif">
+        <button onclick="startGame()" class="start-button" id="Text-font">Start the game loser~</button>
+    </div>
+    <div class="grid" id="gameGrid" style="display: none;"></div>
+    <div class="popup" id="victoryPopup">
+        <img src="img/gif1.gif" alt="Start Gif" class="popup-gif">
+        <p id="victoryTime">Your time: 00:00</p>
+        <p id="victoryTime">Good job dummyy</p>
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
